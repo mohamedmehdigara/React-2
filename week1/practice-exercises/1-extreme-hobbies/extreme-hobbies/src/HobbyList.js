@@ -1,13 +1,16 @@
 import React from 'react';
 
-function HobbyList() {
+
+
+function HobbyList(props) {
   const hobbies = ["Surfing", "Rock climbing", "Mountain biking", "Breakdancing"];
+
   const hobby = props.hobbies;
   const listItems = hobby.map((Hobby) =>
-    <li>{Hobby}</li>
+    <li>{hobbies.Hobby}</li>
   );
   return( <div>
-    {listItems} key={i}
+    {listItems} 
   </div>);
 }
 
